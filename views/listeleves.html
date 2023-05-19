@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestion des notes - Liste des élèves</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestion des notes</h1>
+    <nav>
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="creation.html">creation</a></li>
+        <li><a href="listeleves.html">Liste des élèves</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h2>Liste des élèves</h2>
+    
+    <!-- Barre de recherche -->
+    <input type="text" id="recherche" placeholder="Rechercher un élève...">
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Date de naissance</th>
+          <th>Classe</th>
+          <th>Identifiant</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Awa</td>
+          <td>Sarr</td>
+          <td>01/01/2005</td>
+          <td>6e A</td>
+          <td>123456</td>
+          <td>
+            <button class="btn-edit">Modifier</button>
+            <button class="btn-delete">Supprimer</button>
+          </td>
+        </tr>
+        <tr>
+            <td>Msd</td>
+            <td>Jallow</td>
+            <td>01/01/2006</td>
+            <td>CM 1 A</td>
+            <td>124</td>
+            <td>
+              <button class="btn-edit">Modifier</button>
+              <button class="btn-delete">Supprimer</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Matar</td>
+            <td>Diop</td>
+            <td>01/01/2007</td>
+            <td>4e B</td>
+            <td>123</td>
+            <td>
+              <button class="btn-edit">Modifier</button>
+              <button class="btn-delete">Supprimer</button>
+            </td>
+         </tr>
+         <tr>
+            <td>Ansu</td>
+            <td>Diatta</td>
+            <td>01/02/2005</td>
+            <td>6e A</td>
+            <td>1235</td>
+            <td>
+              <button class="btn-edit">Modifier</button>
+              <button class="btn-delete">Supprimer</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Pascal</td>
+            <td>Coly</td>
+            <td>01/02/2006</td>
+            <td>6e A</td>
+            <td>126</td>
+            <td>
+              <button class="btn-edit">Modifier</button>
+              <button class="btn-delete">Supprimer</button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal pour l'édition d'un élève -->
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <h3>Modifier les informations de l'élève</h3>
+      <form>
+        <label for="edit-nom">Nom :</label>
+        <input type="text" id="edit-nom" name="nom" required>
+      
+        <label for="edit-prenom">Prénom :</label>
+        <input type="text" id="edit-prenom" name="prenom" required>
+        
+        <label for="edit-date">Date de naissance :</label>
+        <input type="text" id="edit-date" name="date" required>
+        
+        <label for="edit-classe">Classe :</label>
+        <input type="text" id="edit-classe" name="classe" required>
+        
+        <label for="edit-identifiant">Identifiant :</label>
+        <input type="text" id="edit-identifiant" name="identifiant">
+        
+        <!-- Autres champs d'information de l'élève -->
+        
+        <button type="submit">Enregistrer</button>
+        <button type="button" class="btn-cancel">Annuler</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

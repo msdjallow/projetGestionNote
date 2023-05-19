@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestion des notes - Création année scolaire, niveau et classe</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestion des notes</h1>
+    <nav>
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="creation.html">creation</a></li>
+        <li><a href="listeleves.html">Liste des élèves</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h2>Création année scolaire</h2>
+    <form>
+      <label for="annee_debut">Année de début :</label>
+      <input type="text" id="annee_debut" name="annee_debut" required>
+      
+      <label for="annee_fin">Année de fin :</label>
+      <input type="text" id="annee_fin" name="annee_fin" required>
+      
+      <button type="submit">Créer</button>
+    </form>
+  </div>
+  
+  <div class="container">
+    <h2>Création niveau d'enseignement</h2>
+    <form>
+      <label for="niveau">Niveau :</label>
+      <input type="text" id="niveau" name="niveau" required>
+      
+      <!-- Autres champs d'information pour le niveau d'enseignement -->
+      
+      <button type="submit">Créer</button>
+    </form>
+  </div>
+  
+  <div class="container">
+    <h2>Création classe</h2>
+    <form>
+      <label for="classe">Classe :</label>
+      <input type="text" id="classe" name="classe" required>
+      
+      <!-- Autres champs d'information pour la classe -->
+      
+      <button type="submit">Créer</button>
+    </form>
+  </div>
+</body>
+</html>
